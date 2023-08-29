@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PX--VW</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="form_container">
+        <section class="input_section">
+          <div class="container_1">
+            <div class="unit_type">
+              <div>
+                <input type="radio" name="unit" id="pixel" />
+                <label for="pixel">Pixel</label>
+              </div>
+              <div>
+                <input type="radio" name="unit" id="rem" />
+                <label for="rem">Rem</label>
+              </div>
+            </div>
+
+            <input
+              type="number"
+              name="window_width"
+              id="window_width"
+              placeholder="Window width" />
+
+            <button type="button" id="btn_submit">Get Code</button>
+          </div>
+
+          <textarea name="code" id="code"></textarea>
+        </section>
+        <textarea name="result_section" class="result_section"></textarea>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
